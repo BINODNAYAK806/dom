@@ -1,0 +1,7 @@
+    // how to access values from inputs <input> <select>
+    // getting element by class, id and querySelectors
+    // Adding CSS using javascript
+    // Events in JS
+    // Create a element using javascript
+    // How to attributes
+    // creating layouts using javascript

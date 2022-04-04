@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      /* universal */
+      * {
+        font-size: 160px;
+      }
+      /* tag>universal */
+      h1 {
+        color: red;
+        font-size: 20px;
+      }
+
+      /* class>tag>univeral */
+      .head {
+        color: blue;
+        font-size: 10px;
+        background-color: red;
+      }
+      /* id>class>tag>universal */
+      #masai {
+        color: teal;
+        font-size: 100px;
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: aqua; font-size: 50px" id="masai" class="head">
+      I am heading
+    </h1>
+  </body>
+</html>
+
+<!-- color-aqua , font-size:50px; -->
+
+<!-- SICTU
+S - inline styles - 1000
+I - id - 100
+C - class -10 
+T - tag -1
+U - Universal -0  -->

@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="basic.css" />
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 200px);
+        gap: 20px 30px;
+        grid-template-areas:
+    
+      }
+      .container > div {
+        font-size: 30px;
+        color: #ffeead;
+        text-align: center;
+      }
+
+      /* 2/1/3/2 --->  1/1/2/2 */
+      html,
+      body {
+        background-color: #ffeead;
+        margin: 10px;
+      }
+
+      .a {
+        background-color: #2d473b;
+        /* grid-area:2/1/3/2; */
+        grid-area:a;
+      }
+
+      .b {
+        background-color: #88d8b0;
+        grid-area:b;
+
+      }
+
+      .c {
+        background-color: #ff6f69;
+        grid-area:c;
+
+      }
+
+      .d {
+        background-color: #ffcc5c;
+        /* grid-row-start:1;
+        grid-column-start: 1;
+        grid-row-end:2;
+        grid-column-end:2 */
+        /* grid-area:1/1/2/2 */
+        grid-area:d;
+
+      }
+      .e {
+        background-color: #010f08;
+        grid-area:e;
+
+
+      }
+
+      .f {
+        background-color: #6b0400;
+        grid-area:f;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="a">A</div>
+      <div class="b">B</div>
+      <div class="c">C</div>
+      <div class="d">D</div>
+      <div class="e">E</div>
+      <div class="f">F</div>
+    </div>
+  </body>
+</html>

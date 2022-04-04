@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* p {
+            color: aqua;
+        } */
+        #heading {
+
+        }
+        .box {
+
+        }
+        #container > p {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <p>I'm para 1</p>
+    <p>I'm para 2</p>
+    <h1 id="heading">I'm Heading</h1>
+    <div class="box">I'm first div</div>
+    <div class="box">I'm second div</div>
+    <div id="container">
+        <p>
+            p1
+        </p>
+        <p>
+            p2
+        </p>
+        <p>
+            p3
+        </p>
+    </div>
+</body>
+<script>
+    
+    // var para = document.getElementsByTagName('p');
+    // console.log(para[0].innerText);
+    // var para = document.querySelector('p')
+    // console.log(para.innerText);
+
+    // var heading = document.querySelector("#heading");
+    // console.log(heading.innerText);
+
+    // var heading = document.querySelector(".box");
+    // console.log(heading.innerText);
+
+
+    // querySelectorAll to get Elements as Array
+
+    //Tags
+    // const allParas = document.querySelectorAll('p:nth-child(3)');
+    // console.log(allParas[0].innerText);
+
+    // classes
+    const allBoxes = document.querySelectorAll('h1 + p');
+    console.log(allBoxes);
+</script>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex & combinaor</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+            background-color: black;
+        
+        }
+        #cont{
+            background-color: white;
+            height: auto;
+            /* margin: 40px 0px; */
+            width: 100%;
+        }
+        div>h1{
+            color: orange;
+            text-align: center;
+            font-size: 60px;
+            /* border: 1px solid rebeccapurple; */
+            /* height: 50px 0px; */
+             /* margin-top: -15px; */
+             margin-bottom: -8px;
+             
+             padding: 10px 0px;
+/* margin: 10px 0px; */
+        }
+        div p{
+            margin-top: -50px;
+            margin: auto;
+            width: 46%;
+            text-align: center;
+            /* justify-content: center; */
+            font-weight: bold;
+            font-size: 13px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+      #img{
+          /* border: 1px solid green; */
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          width: 100%;
+          margin:  0%;
+          /* margin-bottom: 20px; */
+          height: auto;
+          /* display: flex; */
+          /* width: 80%; */
+          /* margin: 60px auto; */
+          /* margin-bottom: 20px; */
+          /* height: auto; */
+          
+          
+      }
+      .img1{
+          width: 90%;
+          height: 100%;
+          /* border: 1px solid blue; */
+          margin: 10px;
+          margin-bottom: 40px;
+      }
+      .img1 img{
+width: 99%;
+height: 65%;
+
+/* margin: ; */
+      }
+      .img1 h3{
+          text-align: center;
+          font-size: 25px;
+      }
+      .img1 p{
+          color: orange;
+      }
+      @media all and (min-width: 451px) and (max-width: 850px){
+        div>h1{
+            color: orange;
+            text-align: center;
+            font-size: 40px;
+            /* border: 1px solid rebeccapurple; */
+            /* height: 50px 0px; */
+             /* margin-top: -15px; */
+             margin-bottom: -8px;
+             
+             padding: 10px 0px;
+/* margin: 10px 0px; */
+        }
+        div p{
+            margin-top: -50px;
+            margin: auto;
+            width: 46%;
+            text-align: center;
+            /* justify-content: center; */
+            font-weight: bold;
+            font-size: 13px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #img{
+          /* border: 1px solid green; */
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          width: 100%;
+          margin: 20px auto;
+          /* margin-bottom: 20px; */
+          height: auto;
+          
+          
+      }
+      .img1{
+          width: 90%;
+          /* border: 1px solid blue;// */
+          margin: 10px;
+          margin-bottom: 40px;
+      }
+      }
+      @media all and (min-width: 320px) and (max-width: 450px){
+        div>h1{
+            color: orange;
+            text-align: center;
+            font-size: 40px;
+            /* border: 1px solid rebeccapurple; */
+            /* height: 50px 0px; */
+             /* margin-top: -15px; */
+             margin-bottom: -8px;
+             
+             padding: 10px 0px;
+/* margin: 10px 0px; */
+        }
+        div p{
+            margin-top: -50px;
+            margin: auto;
+            width: 46%;
+            text-align: center;
+            /* justify-content: center; */
+            font-weight: bold;
+            font-size: 13px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #img{
+          /* border: 1px solid green; */
+          display: grid;
+          grid-template-columns: repeat(1,1fr);
+          width: 100%;
+          margin: 20px auto;
+          /* margin-bottom: 20px; */
+          height: auto;
+          
+          
+      }
+      .img1{
+          width: 90%;
+          /* border: 1px solid blue; */
+          margin: 10px;
+          margin-bottom: 40px;
+      }
+      }
+    </style>
+</head>
+<body>
+    <div id="cont">
+<div id="head">
+    <h1>Rooms & Suits</h1>
+    
+</div>
+<div id="para">
+    <p>Far far away ,behind the word mountains ,far form the countries Vokalia and Consonantia,there live the blind texts.Separated they live in Bookmarksgrove right at the coast of the Semantic,a large language ocean.</p>
+</div>
+<br>
+
+<div id="img">
+    <div class="img1"><img src="https://preview.colorlib.com/theme/sogo/images/ximg_1.jpg.pagespeed.ic.sI14MfHd8f.webp" alt="" srcset="">
+    <h3>Single</h3>
+    <p>90$ / PER NIGHT</p>
+    </div>
+    <div class="img1"><img src="https://preview.colorlib.com/theme/sogo/images/ximg_2.jpg.pagespeed.ic.Y_xvNxfEhu.webp" alt="">
+    <h3>Family Room</h3>
+    <p>120$ / PER NIGHT</p>
+    </div>
+    <div class="img1"><img src="https://preview.colorlib.com/theme/sogo/images/ximg_3.jpg.pagespeed.ic.mYPnC0rXDl.webp" alt="">
+    <h3>Presidential Room</h3>
+    <p>250$ / PER NIGHT</p>
+    </div>
+</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* button {
+            background-color: teal;
+        } */
+    </style>
+</head>
+<body>
+    <h1 id="masaiHeading">Masai School</h1>
+    <button id="completeButton" onclick="completeFunction()"> Mark As Complete</button>
+</body>
+<script>
+    document.getElementById('masaiHeading').style.backgroundColor = "teal";
+    function completeFunction() {
+        document.getElementById('completeButton').innerText = "Completed";
+        document.getElementById('completeButton').style.backgroundColor = "green";
+        document.getElementById('completeButton').style.color = "white";
+        document.getElementById('completeButton').style.fontSize = "40px";
+    }
+</script>
+</html>

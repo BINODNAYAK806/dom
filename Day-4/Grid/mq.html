@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: teal;
+      }
+      h1 {
+        color: red;
+      }
+      /* Medium  */
+      @media all and (min-width: 451px) and (max-width: 830px) {
+        body {
+          background-color: yellow;
+        }
+      }
+
+      /* Small */
+      @media all and (min-width: 80px) and (max-width: 450px) {
+        body {
+          background-color: pink;
+        }
+        h1 {
+          color: black;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I am some dummy text</h1>
+  </body>
+</html>

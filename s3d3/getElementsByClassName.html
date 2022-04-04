@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="headingId" class="heading"> I'm first heading</h1>
+    <h1 class="heading"> I'm second heading</h1>
+
+    <h1 class="heading"> I'm second heading</h1>
+    <h1 class="heading"> I'm second heading</h1>
+    <h1 class="heading"> I'm second heading</h1>
+    <h1 class="heading"> I'm second heading</h1>
+    <h1 class="heading"> I'm second heading</h1>
+    <h1 class="heading"> I'm second heading</h1>
+    <h1 class="heading"> I'm second heading</h1>
+    <h1 class="heading"> I'm second heading</h1>
+    <h1 class="heading"> I'm second heading</h1>
+    <h1 class="heading"> I'm second heading</h1>
+
+</body>
+<script>
+    const heading1 = document.getElementById('headingId').innerText;
+    // To get elements by className
+    const headings = document.getElementsByClassName('heading');
+    // console.log(headings[11].innerText);
+    for(var i=0 ; i<headings.length; i++) {
+        console.log(headings[i].innerText);
+    }
+</script>
+</html>

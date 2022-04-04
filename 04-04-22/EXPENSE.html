@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+<style>
+
+
+
+#dis{
+
+
+    display: grid  ;
+    grid-template-columns: repeat(4,1fr);
+}   
+   
+
+        #line1{
+        text-align: center;
+        font-size: larger;
+        color: orange;
+       
+        margin-left: 40%;
+        margin-right: 40%;
+        border: solid greenyellow;
+
+      }
+    
+
+#head{
+
+
+    text-align: center;
+    color: teal;
+
+
+}
+#gen{
+
+    text-align: center;
+    color: teal;
+    /* margin-right: 10%; */
+   
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    bottom: auto;
+}
+
+#inc{
+
+    text-align: center;
+    color: teal;
+    /* margin-right: 10%; */
+    padding-left: 150%;
+    padding-bottom: 1%;
+    padding-left: 1.37%;
+    padding-right: 10%;
+    bottom: auto;
+
+}
+#exp{
+
+
+    
+    text-align: center;
+    color: teal;
+    /* margin-right: 10%; */
+  
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1%;
+    padding-right: 10%;
+    bottom: auto;
+}
+#sub{
+
+
+padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 1%;
+
+
+}
+
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+    <h1 id="head">EXPENSE TRACKER</h1>
+    <div id="line1">
+        <h2 style="text-align: center;"> select month</h2>
+    <select  id="gen">
+        <option value="jan">jan</option>
+        <option value="feb">feb</option>
+        <option value="mar">mar</option>
+        <option value="apr">apr</option>
+        <option value="may">may</option>
+        <option value="jun">jun</option>
+        <option value="jul">jul</option>
+        <option value="aug">aug</option>
+        <option value="sep">sep</option>
+        <option value="oct">oct</option>
+        <option value="nov">nov</option>
+        <option value="dec">dec</option>
+    </select>
+
+    <h2 id="head">income</h2>
+    <input type="text" id="inc" placeholder="enter income in rs" >
+    <h2 id="head">expance</h2>
+    <input type="text" id="exp" placeholder="enter exp in rs" >
+  
+    <br>
+
+        <button  id="sub"  onclick="che()">submit</button>
+
+    </div>
+    <div id="dis">
+        
+
+    </div>
+ 
+   <script >
+
+       function che(){
+
+        var income =  document.getElementById("inc").value 
+        var exp    = document.getElementById("exp").value
+        var month = document.getElementById("gen").value
+        
+
+        var  saving =  parseInt(income)-parseInt(exp)
+        console.log(saving)
+
+     var arr = []
+     
+     var obj = {}
+
+     obj.month = month
+     obj.income = income
+     obj.exp = exp
+     obj.saving = saving
+     arr.push(obj)
+
+    localStorage.setItem("key",JSON.stringify(arr) )
+
+    var  add = document.getElementById("dis") 
+    if(arr.length !==0){
+
+
+        arr  = JSON.parse(localStorage.getItem("key"))
+
+
+
+    }
+    console.log(arr)
+
+
+
+    arr.forEach(element => {
+        
+    let cont_div = document.createElement("div")
+    let month_di = document.createElement("h4")
+    
+    month_di.textContent = element.month
+    let income_d = document.createElement("p")
+    let exp_d = document.createElement("p")
+    let sav_d = document.createElement("p")
+
+    income_d.textContent = element.income
+    exp_d.textContent = element.exp
+    sav_d.textContent = element.saving
+
+
+    cont_div.append(income_d,exp_d,sav_d)
+    dis.append(cont_div)
+    
+    });
+
+
+
+    
+
+}
+    
+
+   </script>
+    
+</body>
+</html>

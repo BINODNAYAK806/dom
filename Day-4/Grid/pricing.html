@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      #top-section {
+        width: 40%;
+        margin: auto;
+        text-align: center;
+      }
+
+      #top-section > h1 {
+        font-size: 50px;
+      }
+
+      #top-section > p {
+        font-size: 20px;
+        color: rgb(90, 89, 89);
+      }
+
+      #cards-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        width: 65%;
+        margin: auto;
+        margin-top: 100px;
+      }
+
+      #cards-section > div {
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        text-align: center;
+        padding: 40px;
+      }
+
+      #cards-section > div > h1 + p {
+        font-style: italic;
+        margin-top: -15px;
+      }
+      p + p {
+        line-height: 25px;
+        font-size: 18px;
+      }
+
+      button {
+        color: blue;
+        border: 1px solid blue;
+        padding: 10px 25px 10px 25px;
+        background-color: white;
+        margin-top: 20px;
+        font-size: 20px;
+        border-radius: 10px;
+      }
+
+      button:hover {
+        background-color: blue;
+        color: white;
+      }
+
+      /* Meidum */
+
+      @media all and (min-width: 451px) and (max-width: 850px) {
+        #cards-section {
+          grid-template-columns: repeat(2, 1fr);
+          width: 90%;
+          margin: auto;
+          margin-top: 70px;
+        }
+
+        #top-section {
+          width: 90%;
+        }
+      }
+
+      @media all and (min-width: 86px) and (max-width: 450px) {
+        #cards-section {
+          grid-template-columns: repeat(1, 1fr);
+          width: 90%;
+          margin: auto;
+          margin-top: 30px;
+        }
+
+        #top-section {
+          width: 100%;
+        }
+        #top-section > h1 {
+          font-size: 30px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="top-section">
+      <h1>Choose a plan that right for your business</h1>
+      <p>
+        We collect reviews from our users so you can get an honest opinion of
+        what an experience with our website are really like!
+      </p>
+    </div>
+
+    <div id="cards-section">
+      <div>
+        <h2>Starter Plan</h2>
+        <h1>Free</h1>
+        <p>Per Month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button>Start Now</button>
+      </div>
+      <div>
+        <h2>Starter Plan</h2>
+        <h1>Free</h1>
+        <p>Per Month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button>Start Now</button>
+      </div>
+      <div>
+        <h2>Starter Plan</h2>
+        <h1>Free</h1>
+        <p>Per Month</p>
+        <p>
+          We collect reviews from our users so you can get an honest opinion of
+          what an experience with our website.
+        </p>
+        <button>Start Now</button>
+      </div>
+    </div>
+  </body>
+</html>

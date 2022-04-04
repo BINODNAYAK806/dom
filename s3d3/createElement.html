@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #catStyle {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h1>Hi</h1> -->
+    <img/>
+</body>
+<script>
+    // To create elements dynamically
+    // for(var i = 0; i<100; i++) {
+    //     var heading1 = document.createElement("p");
+    //     heading1.innerText = 'Hello I created from JS'
+    //     document.querySelector('body').append(heading1);
+    // }
+    
+    // Appending mutiple tags
+    // var heading1 = document.createElement("h1");
+    // heading1.innerText = 'Hello I created from JS'
+    // var para = document.createElement("p");
+    // para.innerText = 'Para'
+
+    // setting up attributes
+    var image = document.createElement('img');
+    image.setAttribute("src", "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/600px-Cat03.jpg");
+    image.setAttribute('id', 'catStyle');
+    document.querySelector('body').append(image);
+</script>
+</html>

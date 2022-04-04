@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox</title>
+    <style>
+      body {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .container {
+            /* parent */
+        /* border: 6px solid black; */
+        display: flex;
+        
+        
+
+      }
+      .container > div {
+        color: white;
+        font-size: 25px;
+        padding: 15px;
+        text-align: center;
+        
+      }
+      .item-1 {
+        background-color: #27271d;
+        /* order:0; */
+        flex-grow:1
+        
+        
+        
+      }
+      .item-2 {
+        background-color: #27271d;
+        font-style: bold;
+        font-size: larger;
+      
+        /* order:5 */
+        flex-grow: 1/2;
+      }
+      .item-3 {
+        background-color: #27271d;
+        /* order:0 */
+        /* flex-grow:1 */
+      }
+      .item-4 {
+        background-color: #27271d;
+        /* flex-grow:1 */
+      }
+      .item-5 {
+        background-color: #27271d;
+        /* order:1 */
+      }
+      .item-6 {
+        background-color: #1c4c56;
+        flex-grow:1
+      }
+      .item-7 {
+        background-color: #b95f21;
+      }
+      .item-8 {
+        background-color: #01243a;
+        /* order:10 */
+      }
+      .item-9 {
+        background-color: #aad041;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item-1" style="text-align: left;">MEGAWIDTH</div>
+      <div class="item-2" style="font-size: 18px;">Home</div>
+      <div class="item-3"  style="font-size: 18px;">About</div>
+      <div class="item-4"  style="font-size: 18px;">Blog</div>
+        <div class="item-5"  style="font-size: 18px;">Page</div>
+      <!-- <div class="item-6">Item 6</div>
+      <div class="item-7">Item 7</div>
+      <div class="item-8">Item 8</div>
+      <div class="item-9">Item 9</div> -->
+    </div>
+  </body>
+</html>
+
+<!-- flex -->
+
+<!-- Parent Properties -->
+<!-- display
+flex-direction
+flex-wrap
+justify-content
+align-items -->
+
+<!-- Child properties 
+1.order
+2.flex-grow -->
+
